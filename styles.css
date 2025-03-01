@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Header */
+header {
+    background-color: #E6D2B5;
+    /* Lighter Beige */
+    color: #444;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #c0b283;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nameplate */
+.nameplate {
+    background-color: #C5A88E;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nameplate:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #555;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #778899;
+    /* Slate Gray */
+}
+
+/* Navigation */
+nav {
+    margin-top: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    /* Use gradient for background */
+    background: linear-gradient(to bottom, rgba(240, 230, 140, 0.3), rgba(176, 224, 230, 0.3)), url("images/product-background.jpg") center/cover no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 3rem;
+    background: rgba(255, 250, 205, 0.7);
+    /* LemonChiffon */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2,
+section h3,
+section h4 {
+    font-size: 1.8rem;
+    color: #708090;
+    /* SlateGray */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+    font-style: italic;
+}
+
+/* Profile Summary */
+#profile-summary {
+    position: relative;
+    height: auto;
+    /* Adjust height */
+    min-height: 600px;
+    /* Minimum */
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* Vert align */
+    justify-content: space-between;
+    /* Space evenly */
+}
+
+/* Profile Image styling for better visual appeal */
+.profile-picture {
+    width: 40%;
+    padding: 20px;
+    /* Some spacing */
+    box-sizing: border-box;
+}
+
+.profile-picture img {
+    width: 100%;
+    /* Now it fills */
+    max-width: 300px;
+    /* Example max */
+    border-radius: 8%;
+    /* You want it sharper */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* New styling with text sizing and better padding */
+.profile-content {
+    position: relative;
+    width: 60%;
+    padding: 4rem;
+    background-color: #D8BFAA;
+    box-sizing: border-box;
+}
+
+.profile-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #bc8f8f;
+    /* RosyBrown */
+}
+
+.profile-content p {
+    font-size: 1.2rem;
+    /* Better sizing */
+    line-height: 1.6;
+    /* Space out lines */
+    text-align: left;
+    color: #2f4f4f;
+    /* DarkSlateGray */
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(245, 245, 220, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+#contact button {
+    background-color: #666;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5dc;
+    color: #777;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
